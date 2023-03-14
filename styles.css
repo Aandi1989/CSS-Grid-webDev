@@ -15,10 +15,10 @@
 
 .gridItem1 {
   background-color: red;
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 4;
+  grid-column-start: -2;
+  grid-column-end: -1;
+  grid-row-start: -1;
+  grid-row-end: -2;
 }
 
 .gridItem2 {
