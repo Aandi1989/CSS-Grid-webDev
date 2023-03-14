@@ -10,18 +10,12 @@
 }
 
 .grid{
-    display: grid;
-    grid-gap:10px;
-    grid-template-columns: repeat(auto-fill, minmax(200px, auto)); // useful property 
-}
-
-.grid1{
-    height: 100vh;
-}
-
-.grid2{
-    grid-gap: 5px;
-    grid-template-columns: repeat(4, auto);
+   display: grid;
+   grid-gap: 10px;
+   height: 100vh;
+   grid-template-columns: repeat(auto-fit, minmax(100px,auto)); 
+   /* здесь вместь auto-fill применяем auto-fit на тот случай если у нас будет 
+   всего три блока, они растянулись по ширине и справа не было свободного пространства */
 }
 
 

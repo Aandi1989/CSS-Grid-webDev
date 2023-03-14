@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -12,16 +13,10 @@
 .grid {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(auto-fill, minmax(200px, auto));
-}
-
-.grid1 {
   height: 100vh;
-}
-
-.grid2 {
-  grid-gap: 5px;
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+  /* здесь вместь auto-fill применяем auto-fit на тот случай если у нас будет 
+  всего три блока, они растянулись по ширине и справа не было свободного пространства */
 }
 
 /*# sourceMappingURL=styles.css.map */
