@@ -9,7 +9,8 @@
     width: 100%;
     border:1px solid black;
     display: grid;
-    grid-template-columns: 200px 100px minmax(100px, 300px);
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 }
 
 .gridItem {
@@ -17,6 +18,10 @@
 }
 .gridItem1 {
     background-color: red;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
 }
 .gridItem2 {
     background-color: yellow;
