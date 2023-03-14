@@ -9,13 +9,13 @@
   width: 100%;
   border: 1px solid black;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(12, [col] 1fr);
+  grid-template-rows: repeat(8, [row] 1fr);
+  grid-column-gap: 15px;
 }
 
 .gridItem1 {
   background-color: red;
-  grid-area: 1/3/4/4;
 }
 
 .gridItem2 {
@@ -24,6 +24,7 @@
 
 .gridItem3 {
   background-color: green;
+  grid-column: col 1/col 4;
 }
 
 /*# sourceMappingURL=styles.css.map */
