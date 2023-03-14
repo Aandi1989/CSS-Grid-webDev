@@ -8,31 +8,31 @@
 .grid {
   width: 100%;
   border: 1px dotted black;
-  height: 600px;
+  height: 100vh;
   display: grid;
-  grid-gap: 15px;
-  justify-content: space-evenly; /* start / end / center /
-stretch / space-around / space-between / space-evenly */
-  align-content: space-evenly; /* start / end / center /
-stretch / space-around / space-between / space-evenly */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 10px;
+  grid-auto-flow: row dense; /* row column auto dense  */
+}
+
+.gridItem:nth-child(2), .gridItem:nth-child(3) {
+  grid-column: span 2;
 }
 
 .gridItem {
   text-align: center;
-  padding-top: 10px;
-  width: 100px;
-  height: 100px;
 }
 
-.gridItem1 {
+.gridItem1, .gridItem4, .gridItem7, .gridItem10 {
   background-color: aqua;
 }
 
-.gridItem2 {
+.gridItem2, .gridItem5, .gridItem8 {
   background-color: antiquewhite;
 }
 
-.gridItem3 {
+.gridItem3, .gridItem6, .gridItem9 {
   background-color: aquamarine;
 }
 
