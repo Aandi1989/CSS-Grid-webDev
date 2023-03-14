@@ -13,26 +13,25 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
   grid-gap: 10px;
-  grid-auto-flow: row dense; /* row column auto dense  */
 }
 
-.gridItem:nth-child(2), .gridItem:nth-child(3) {
-  grid-column: span 2;
+.gridItem:nth-child(2) {
+  order: -1;
 }
 
 .gridItem {
   text-align: center;
 }
 
-.gridItem1, .gridItem4, .gridItem7, .gridItem10 {
+.gridItem1 {
   background-color: aqua;
 }
 
-.gridItem2, .gridItem5, .gridItem8 {
+.gridItem2 {
   background-color: antiquewhite;
 }
 
-.gridItem3, .gridItem6, .gridItem9 {
+.gridItem3 {
   background-color: aquamarine;
 }
 
