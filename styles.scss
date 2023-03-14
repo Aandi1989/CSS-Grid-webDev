@@ -8,21 +8,33 @@
 .grid{
     width: 100%;
     border:1px dotted black;
+    height: 600px;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 300px;
+    grid-gap: 15px;
 
-    justify-items: center; /* stretch end star */
-    align-items: center;  /* stretch end star */
+    justify-content: space-evenly; /* start / end / center /
+    stretch / space-around / space-between / space-evenly */
+
+    align-content:space-evenly; /* start / end / center /
+    stretch / space-around / space-between / space-evenly */
 }
 
 .gridItem {
-    background-color: aquamarine;
+    text-align: center;
+    padding-top: 10px;
+    width: 100px;
+    height: 100px;
+}
+.gridItem1 {
+    background-color:aqua;
+}
+.gridItem2 {
+    background-color: antiquewhite;
+}
+.gridItem3 {
+    background-color:aquamarine;
 }
 
-.gridItem1 {
-    
-}
 
 
 
