@@ -11,14 +11,12 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 300px;
+  justify-items: center; /* stretch end star */
+  align-items: center; /* stretch end star */
 }
 
 .gridItem {
   background-color: aquamarine;
-  align-self: center; /*or align-self:end  or  align-self:start 
-default value is align-self:stretch*/
-  justify-self: center; /*or justify-self:end  or  justify-self:start 
-default value is justify-self:stretch*/
 }
 
 /*# sourceMappingURL=styles.css.map */
