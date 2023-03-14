@@ -24,7 +24,7 @@
 
 .gridItem3 {
   background-color: green;
-  grid-column: col 1/col 4;
+  grid-column: col 1/span 4;
 }
 
 /*# sourceMappingURL=styles.css.map */
